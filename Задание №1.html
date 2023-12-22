@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Задание №1</title>
+  </head>
+  <body>
+    <script>
+      var K = parseFloat(prompt("Введите K:"));
+      var N = parseFloat(prompt("Введите N:"));
+
+      console.log("Значение K равно: " + K);
+      console.log("Значение N равно: " + N);
+
+      if (N <= 0) {
+        console.log("FALSE");
+      } else {
+        let array = [];
+        for (let i = 0; i < N; i++) {
+          array.push(Math.floor(Math.random() * 100)); // Генерация случайного числа от 0 до 100
+        }
+
+        console.log("Список чисел длиной N: " + array);
+
+        let bull = 0;
+
+        for (let i = 0; i < array.length; i++) {
+          if (array[i] < K) {
+            bull = "TRUE";
+            break;
+          }
+        }
+        if (bull == 0) {
+          console.log("FALSE");
+        } else {
+          console.log("TRUE");
+        }
+      }
+    </script>
+  </body>
+</html>

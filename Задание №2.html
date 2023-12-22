@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Задание №2</title>
+  </head>
+  <body>
+    <script>
+      var N = parseFloat(prompt("Введите N: "));
+      console.log("Значение N равно: " + N);
+      if (N <= 0) {
+        console.log("Неверный ввод! Пожалуйста, введите число, больше 0!");
+      } else {
+        let result = 0;
+        for (let i = 1; i <= N; i++) {
+          result += 1 / i;
+        }
+        console.log("Результат вычисления равен " + result);
+      }
+    </script>
+  </body>
+</html>
